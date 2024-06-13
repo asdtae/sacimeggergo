@@ -1,0 +1,80 @@
+p {
+    
+}
+
+
+#elso button {
+    height: 150px;
+    width: 150px;
+}
+#elso {
+    display : flex ;
+    align-items : center ;
+    justify-content : center ;
+    border-radius: 0px;
+}
+
+#elso img {
+    width: 100px;
+}
+
+h1 {
+    display : flex ;
+    align-items : center ;
+    justify-content : center ;
+}
+
+#ko
+{
+border-radius: 0px;
+background-color : rgb(255, 255, 255) ;
+float : left ;
+text-align : center ;
+font-size : 30px ;
+color : white ;
+padding : 10px ;
+display : flex ;
+align-items : center ;
+justify-content : center ;
+height : 100px ;
+width : 30% ;
+}
+
+#papir
+{
+border-radius: 0px;
+background-color : rgb(255, 255, 255) ;
+float : left ;
+text-align : center ;
+font-size : 30px ;
+color : white ;
+padding : 10px ;
+display : flex ;
+align-items : center ;
+justify-content : center ;
+height : 100px ;
+width : 30% ;
+}
+
+#ollo
+{
+border-radius: 0px;
+background-color : rgb(255, 255, 255) ;
+float : left ;
+text-align : center ;
+font-size : 30px ;
+color : white ;
+padding : 10px ;
+display : flex ;
+align-items : center ;
+justify-content : center ;
+height : 100px ;
+width : 30% ;
+}
+
+#result {
+    margin: 20px;
+    display : flex ;
+    align-items : center ;
+    justify-content : center ;
+}

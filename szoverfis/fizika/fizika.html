@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravitáció Szimuláció</title>
+    <link rel="stylesheet" href="fizika.css">
+</head>
+<body>
+    <header>
+        <h1>Gravitáció Szimuláció - Készítette: Markovics Gergő és Szövérfi Sarolta</h1>
+    </header>
+    <main>
+        <div class="simulation">
+            <canvas id="simulationCanvas"></canvas>
+        </div>
+        <div class="controls">
+            <label style="color: beige;" for="heightInput"><b>Magasság (m):</b></label>
+            <input class="egy" type="number" id="heightInput">
+            <label style="color: beige;" for="weightInput"><b>Légellenállás^(-1):</b></label>
+            <input class="ketto" type="number" id="weightInput">
+            <button class="harom" id="updateButton"><b>Frissítés</b></button>
+            <button class="negy" id="startButton"><b>Start</b></button>
+        </div>
+        <div class="info">
+            <h2>Információk a gravitációról</h2>
+            
+                <h3>1. Gravitációs Gyorsulás:</h3>
+                <p>- A Földön minden tárgy azonos gyorsulással esik, értéke 9.8 (m/s)^2</p>
+
+<h3>2. Szabadesés:</h3>
+<p>- Vákuumban (légellenállás nélkül) minden tárgy ugyanakkora gyorsulással esik.</p>
+    <p> - A légkörben a légellenállás lassítja a tárgyakat, főleg a könnyebbeket és nagyobb felületűeket.</p>
+
+<h3>3. Két Tárgy Esése:</h3>
+<p> - Vákuumban: Egy könnyű és egy nehéz tárgy egyszerre ér földet.</p>
+    <p>- Légkörben: A nehéz tárgy gyorsabban esik, mert kevésbé lassítja a légellenállás.</p>
+
+<h3>Példa</h3>
+<p>- Vákuumban: Egy toll és egy fémgolyó egyszerre ér földet.</p>
+    <p>- Légkörben: A fémgolyó gyorsabban esik le, mert a tollat jobban lassítja a légellenállás.</p>
+            </p>
+
+        </div>
+    </main>
+    <script src="fizika.js"></script>
+</body>
+</html>

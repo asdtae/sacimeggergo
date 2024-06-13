@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute; /*its different with static*/
+            background: palegoldenrod;
+        }
+
+        .red {
+            width: 200px;
+            height: 200px;
+            background: red;
+            top: 50px;
+            left: 50px;
+            z-index: 5; /* order of divs*/
+        }
+
+        .blue {
+            width: 150px;
+            height: 150px;
+            background: blue;
+            top: 80px;
+            z-index: 3;
+        }
+
+        .yellow {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            left: 80px;
+            z-index: 6;
+        }    
+</style>
+</head>
+<body>
+    <div class="red">Red</div>
+    <div class="blue">Blue</div>
+    <div class="yellow">Yellow</div>
+</body>
+</html>

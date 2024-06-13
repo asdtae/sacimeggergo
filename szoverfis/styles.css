@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+
+
+h1 {
+    font-size: 4rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "roboto mono" , monospace;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+figure {
+    width: 10px;
+}
+
+figure img{
+    width: 250px;
+    
+}
+
+nav .menu-peincipal{
+    display: flex;
+    justify-content: space-around;
+    color: #000000;
+}
+
+nav .menu-peincipal li {
+    margin: 0 10px;
+    list-style-type: none; /* szoveg dekoracio*/
+}
+
+section .background-img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+section .background-img img {
+    width: 100%;
+}
+
+/* section figure img{
+    width: 100%;
+} */
+
+.hero {
+    position:relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-info {
+    position: absolute; /* absolut-put the image on the first container that was static*/
+    top: 50%;
+    text-align: center;
+}
+
+.hero-info h1 , .hero-info h2{
+    color:aliceblue;
+}
+
+.hero-info .botones button{
+   padding: 10px 50px;
+   margin: 10px 20px;
+   background-color: rgb(241, 235, 168) ;
+   color: rgb(22, 83, 52);
+   font-weight: bold;
+   border-radius: 20px;
+   border: none;
+}
+
+.noticias {
+    text-align: center;
+    margin: 3rem;
+    padding: 30px;
+
+}
+
+.noticias h3 {
+    color:rgb(0, 49, 12);
+    margin: 10px;
+    padding: 10px;
+}
+
+.noticias h2 {
+    font-size: 3rem;
+    margin: 20px 0 40px 0;
+    color:rgb(65, 44, 18);
+}
+
+.noticias p {
+    color: rgb(65, 80, 0);
+    line-height: 1.5rem;
+}
+
+footer {
+    background: black;
+    color:beige;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .subscription {
+    text-align: center;
+    width: 40%;
+    margin: 50px;
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+form input {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(173, 218, 175);
+    text-align: center;
+    color: rgb(7, 41, 24);
+}
+
+form button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color:rgb(7, 41, 24);
+    text-align: center;
+    color:  rgb(173, 218, 175);
+}
+
+footer .social-media {
+    text-align: center;
+}
+
+footer .social-media ul {
+    width: 60%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .social-media ul li a i {
+    margin: 4px;
+    color: rgb(167, 230, 185);
+    font-size: 2rem;
+}
+
+@media (max-width: 1024px){
+    body {
+        background: rgb(109, 121, 109);
+
+    }
+}
+
+@media (max-width: 1024px){
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1rem;
+    }
+
+    header {
+        display: block;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    figure {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu-peincipal {
+        margin-bottom: 2rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero .hero-info {
+        color:black;
+    }
+
+    .hero {
+        position:static
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .hero-info {
+        margin-top: 3rem;
+        position: static;
+        text-align: center;
+    }
+    
+    .hero-info h1 , .hero-info h2{
+        color:aliceblue;
+    }
+    
+    .hero-info .botones button{
+       padding: 10px 50px;
+       margin-top: 2rem;
+       background-color: rgb(241, 235, 168) ;
+       color: rgb(22, 83, 52);
+       font-weight: bold;
+       border-radius: 20px;
+       border: none;
+    }
+
+    .noticias {
+        margin: 0;
+    }
+    
+    .noticias h2 {
+        font-size: 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
