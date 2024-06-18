@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Inga szimulació</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<html>
+<head>
+  <title>Inga</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script language="javascript" type="text/javascript" src="p5.js"></script>
+  <script language="javascript" type="text/javascript" src="pendulum.js"></script>
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+</head>
+<body>
+
+
+
+<div class="control">
+    <strong style="font-weight: bold; font-size: 32pt">Értékek
+    </strong>
+    <br><br>
+
+    <button class="button" 
+            onclick="location.href='index.html';">
+        Újrakezdés
+    </button>
+    <br>
+
+    Hosszúság
+    <input id="Lslider" type="range" min="-800" max="-0" step="1" oninput="lsliderChange(this.value); l = -(this.value);
+                                                                   p = new Pendulum(v,l, m);">
+    <output id="LsliderVal"> 400 </output>
+    <br><br>
+
+    Tömeg
+    <input id="Mslider" type="range" min="0" max="200" step="1" oninput="msliderChange(this.value); m = parseInt(this.value);
+                                                                   p = new Pendulum(v,l, m);">
+    <output id="msliderVal"> 50 </output>
+    <br><br>
+
+    g
+    <input id="Gslider" type="range" min="1" max="20" step="0.01" oninput="gsliderChange(this.value); g = parseInt(this.value);
+                                                                   p = new Pendulum(v,l, m);">
+    <output id="GsliderVal"> 9.82 </output>
+    <br>
+
+    <small style="font-size: 10pt">Készitette:</small>
+    <p1>
+    <small style="font-size: 10pt">Mihály Márk </small><br></p1>
+  
+</div>
+
+<script>
+    function lsliderChange(val) {
+        document.getElementById('LsliderVal').innerHTML = -val;
+    }
+    function msliderChange(val) {
+        document.getElementById('msliderVal').innerHTML = val;
+    }
+    function gsliderChange(val) {
+        document.getElementById('GsliderVal').innerHTML = val;
+    }
+
+</script>
+</body>
+</html>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
